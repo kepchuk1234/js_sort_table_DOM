@@ -48,8 +48,9 @@ function sort(e) {
 
 function getData(t) {
   const result = [];
+  const end = [...t.rows].length - 1;
 
-  for (let i = 1; i < [...t.rows].length - 1; i++) {
+  for (let i = 1; i < end; i++) {
     const row = [...t.rows][i];
     const cells = [...row.cells];
 
